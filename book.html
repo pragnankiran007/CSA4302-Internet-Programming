@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url("https://img.freepik.com/premium-vector/seamless-background-theme-restaurant-menu_600765-9940.jpg");
+            background-position: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Booking Form Container */
+        .booking-container {
+            background-color: #fffbfb;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        .booking-container h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Input Fields */
+        .booking-container input[type="text"],
+        .booking-container input[type="email"],
+        .booking-container input[type="date"],
+        .booking-container input[type="time"],
+        .booking-container input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Submit Button */
+        .booking-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6347;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .booking-container input[type="submit"]:hover {
+            background-color: #ff4500;
+        }
+
+        /* Additional Links */
+        .booking-container a {
+            text-decoration: none;
+            color: #ff6347;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .booking-container a:hover {
+            color: #ff4500;
+        }
+         /* Return Home Link */
+         .booking-container a {
+            text-decoration: none;
+            color: #000000;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .booking-container a:hover {
+            color: #f05d27;
+        }
+    </style>
+</head>
+<body>
+    <!-- Table Booking Form -->
+    <div class="booking-container">
+        <h2>Book a Table</h2>
+        <form action="payment.html" method="POST">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+            <input type="date" name="date" placeholder="Select Date" required>
+            <input type="time" name="time" placeholder="Select Time" required>
+            <input type="number" name="guests" placeholder="Number of Guests" min="1" max="20" required>
+            <input type="submit" value="Book Now">
+        </form>
+        <a href="home.html" class="return-home">Return to Home</a>
+    </div>
+</body>
+</html>

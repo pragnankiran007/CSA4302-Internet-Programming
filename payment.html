@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Table Booking - Payment</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Payment Form Container */
+        .payment-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        .payment-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Input Fields */
+        .payment-container input[type="text"],
+        .payment-container input[type="email"],
+        .payment-container input[type="number"],
+        .payment-container input[type="month"],
+        .payment-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Submit Button */
+        .payment-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .payment-container input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Additional Links */
+        .payment-container a {
+            text-decoration: none;
+            color: #28a745;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .payment-container a:hover {
+            color: #218838;
+        }
+    </style>
+    <script>
+        function showAlert(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("Table is booked!"); // Show alert message
+            // Redirect to home page after alert
+            setTimeout(() => {
+                window.location.href = 'home.html';
+            }, 2000); // Redirect after 2 seconds
+        }
+    </script>
+</head>
+<body>
+    <!-- Payment Form -->
+    <div class="payment-container">
+        <h2>Payment Information</h2>
+        <form onsubmit="showAlert(event)">
+            <input type="text" name="name" placeholder="Name on Card" required>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+            <input type="number" name="card_number" placeholder="Card Number" required>
+            <input type="month" name="exp_date" placeholder="Expiration Date" required>
+            <input type="password" name="cvv" placeholder="CVV" required>
+            <input type="submit" value="Pay Now">
+        </form>
+    </div>
+</body>
+</html>

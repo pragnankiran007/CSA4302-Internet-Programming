@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Table Booking - Contact Us</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #56c8cc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 500px;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        /* Contact Form Container */
+        .contact-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 700px;
+            text-align: center;
+        }
+
+        .contact-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Input Fields */
+        .contact-container input[type="text"],
+        .contact-container input[type="email"],
+        .contact-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-container textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        /* Submit Button */
+        .contact-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Contact Details Section */
+        .contact-details {
+            margin-bottom: 20px;
+            text-align: left;
+            color: #555;
+        }
+
+        .contact-details h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .contact-details p {
+            margin-bottom: 8px;
+        }
+
+        .contact-details p span {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function showAlert(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("Message is forwarded!"); // Show alert message
+            // Redirect to home page after alert
+            setTimeout(() => {
+                window.location.href = 'home.html';
+            }, 2000); // Redirect after 2 seconds
+        }
+    </script>
+</head>
+<body>
+    <!-- Contact Form -->
+    <div class="contact-container">
+        <!-- Contact Details Section -->
+        <div class="contact-details">
+            <h3>Contact Information</h3>
+            <p><span>Phone:</span> +1 234 567 890</p>
+            <p><span>Email:</span> contact@restaurant.com</p>
+            <p><span>Address:</span> 1234 Food Street, Flavor Town, USA</p>
+        </div>
+
+        <h2>Contact Us</h2>
+        <form onsubmit="showAlert(event)">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+</html>
+

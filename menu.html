@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPpbQ8fKgO_DguMz82tTftNLxmySAo0l-fFQ0hHRFFkJNniy6KoWnSpXIJvwR8p3cNIAM&usqp=CAU');
+            background-position: 100%;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Menu Container */
+        .menu-container {
+            max-width: 650px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Title */
+        .menu-section {
+            margin-bottom: 30px;
+        }
+
+        .menu-section h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ff6347;
+            padding-bottom: 5px;
+            color: #ff6347;
+        }
+
+        /* Menu Item */
+        .menu-item {
+            display: 100%;
+            justify-content: space-between;
+            align-items: right;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .menu-item p {
+            color: #777;
+        }
+        .menu-item img{
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .menu-item span {
+            color: #ff6347;
+            font-weight: bold;
+            margin-left: 500px;
+
+        }
+        .goto{
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 40px;
+            width: 300px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: black;
+            background-color:#ff6347;
+            cursor: pointer;
+            margin-right: 300px;
+        }
+        .goto:hover{
+            background-color:rgb(240, 240, 240);
+        }
+
+    </style>
+</head>
+<body>
+    <button class="goto" onclick="window.location.href='home.html'">GO TO HOME</button>
+    <h1>Our Expanded Menu</h1>
+    <div class="menu-container">
+        <!-- Appetizers Section -->
+        <div class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Bruschetta</h3>
+                    <p>Grilled bread with garlic, tomatoes, and olive oil</p>
+                </div>
+                <img src="https://myanosmickitchen.com/wp-content/uploads/2022/07/IMG-20231029-WA0013.jpg" alt="Bruschetta" style="width: 80px; height: 80px; object-fit: cover;">
+                <span>INR.1100.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Chilli Chicken</h3>
+                    <p>Grilled bread with garlic, tomatoes, and olive oil</p>
+                </div>
+                <img src="https://i.ytimg.com/vi/pMCS1TR4Wyo/maxresdefault.jpg" alt="Chilli Chicken" style="width: 80px; height: 80px; object-fit: cover;">
+                <span>INR.1100.00</span>
+            </div>
+            
+            <div class="menu-item">
+                <div>
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine, parmesan, croutons, and Caesar dressing</p>
+                </div>
+                <img src="Images\salad.jpeg" alt="Caesar salad" style="width: 80px; height: 80px; object-fit: cover;">              
+                <span>INR.1200.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Fried Calamari</h3>
+                    <p>Lightly battered and served with marinara sauce</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-JFivx9Co10kwy0oonolJnK7ohxHiH9tC-g&s" alt="Fried Calamari" style="width: 80px;height: 80px; object-fit: cover;">               
+                 <span>INR.3000.00</span>
+                     </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Stuffed Mushrooms</h3>
+                    <p>Mushrooms stuffed with cheese and herbs</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdPwnPgKUXAvNujvqzsJWRtMTFzWRdGSPLg&s" alt="Stuffed Mushrooms" style="width: 80px; height: 80px; object-fit: cover;">
+                <span>INR.500.00</span>
+            </div>
+        </div>
+
+        <!-- Main Courses Section -->
+        <div class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Grilled Chicken</h3>
+                    <p>Served with vegetables and mashed potatoes</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToMozkkZv6pQonP3nn1BlXT2uLTWJxeshxYA&s" alt="Grilled Chicken" style="width: 80px; height: 80px; object-fit: cover;">
+                <span>INR.1500.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Pasta with pancetta, egg, and Parmesan cheese</p>
+                </div>
+                <img src="https://www.twopeasandtheirpod.com/wp-content/uploads/2023/01/Spaghetti-Carbonara168766.jpg" alt="Spaghetti Carbonara" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.1000.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Pizza</h3>
+                    <p>Classic pizza with tomatoes, mozzarella, and basil,Chicken Tikka Pizza,Panner Pizza</p>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" alt="Pizza" style="width: 80px; height: 80px; object-fit: cover">
+                <span>INR.350.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Grilled Salmon</h3>
+                    <p>Served with quinoa and lemon butter sauce</p>
+                </div>
+                <img src="Images\sal.jpeg" alt="Grilled Salmon" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.2000.00</span>
+
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Ribeye Steak</h3>
+                    <p>Served with garlic butter and seasoned fries</p>
+                </div>
+                <img src="Images\steaks.jpeg" alt="Ribeye Steak" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.650.00</span>
+            </div>
+        </div>
+
+        <!-- Desserts Section -->
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Tiramisu</h3>
+                    <p>Layered espresso-soaked ladyfingers with mascarpone cream</p>
+                </div>
+                <img src="Images\t.jpeg" alt="Tiramisu" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.250.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Warm chocolate cake with a molten center</p>
+                </div>
+                <img src="Images\choco.jpeg" alt="Chocolate Lava Cake" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.160.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Cheesecake</h3>
+                    <p>New York style with a graham cracker crust,Strawberry sauce,Butter</p>
+                </div>
+                <img src="Images\chesse.jpeg" alt="Cheesecake" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.150.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Apple Pie</h3>
+                    <p>Served with vanilla ice cream</p>
+                </div>
+                <img src="Images\pie.jpeg" alt="Apple Pie" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.250.00</span>
+            </div>
+        </div>
+
+        <!-- Drinks Section -->
+        <div class="menu-section">
+            <h2>Drinks</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Soft Drinks</h3>
+                    <p>Choose from Coke, Diet Coke, Sprite, or Fanta</p>
+                </div>
+                <img src="Images\softdrinks.jpeg" alt="Soft Drinks" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.40.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Mineral Water</h3>
+                    <p>Still or sparkling</p>
+                </div>
+                <img src="Images\water.jpeg" alt="Mineral Water" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.20.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Fresh Lemonade</h3>
+                    <p>Homemade lemonade with a hint of mint</p>
+                </div>
+                <img src="Images\lemonade.jpeg" alt="Fresh Lemonade" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.30.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Espresso</h3>
+                    <p>Strong, rich espresso shot</p>
+                </div>
+                <img src="Images\espresso.jpeg" alt="Espresso" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.60.00</span>
+            </div>
+        </div>
+
+        <!-- Sides Section -->
+        <div class="menu-section">
+            <h2>Sides</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>French Fries</h3>
+                    <p>Crispy golden fries</p>
+                </div>
+                <img src="Images\fries.jpeg" alt="French Fries" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.100.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Steamed Vegetables</h3>
+                    <p>Fresh seasonal vegetables</p>
+                </div>
+                <img src="Images\vege.jpeg" alt="Steamed Vegetables" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.120.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Garlic Bread</h3>
+                    <p>Toasted bread with butter</p>
+                </div>
+                <img src="Images\garlic bread.jpeg" alt="Garlic Bread" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.60.00</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Mashed Potatoes</h3>
+                    <p>Rich and creamy mashed potatoes</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREsMa307jd9ANl-xHJWC2c5ZBDaKT8I86T5g&s" alt="Rich and creamy mashed potatoes" style="width: 80px; height: 80px; object-fit: cover;" >
+                <span>INR.80.00</span>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
